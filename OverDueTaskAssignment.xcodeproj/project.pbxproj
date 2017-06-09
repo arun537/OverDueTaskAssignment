@@ -16,6 +16,10 @@
 		B2976CE31EE966D400F40506 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2976CE11EE966D400F40506 /* LaunchScreen.storyboard */; };
 		B2976CEE1EE966D400F40506 /* OverDueTaskAssignmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976CED1EE966D400F40506 /* OverDueTaskAssignmentTests.m */; };
 		B2976CF91EE966D500F40506 /* OverDueTaskAssignmentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976CF81EE966D500F40506 /* OverDueTaskAssignmentUITests.m */; };
+		B2976D081EE9675100F40506 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976D071EE9675100F40506 /* AddTaskViewController.m */; };
+		B2976D0B1EE9676C00F40506 /* DeatilTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976D0A1EE9676C00F40506 /* DeatilTaskViewController.m */; };
+		B2976D0E1EE9677E00F40506 /* EditTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976D0D1EE9677E00F40506 /* EditTaskViewController.m */; };
+		B2976D121EE96C9C00F40506 /* TaskObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B2976D111EE96C9C00F40506 /* TaskObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,15 @@
 		B2976CF41EE966D500F40506 /* OverDueTaskAssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverDueTaskAssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2976CF81EE966D500F40506 /* OverDueTaskAssignmentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverDueTaskAssignmentUITests.m; sourceTree = "<group>"; };
 		B2976CFA1EE966D500F40506 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2976D061EE9675100F40506 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		B2976D071EE9675100F40506 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		B2976D091EE9676C00F40506 /* DeatilTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeatilTaskViewController.h; sourceTree = "<group>"; };
+		B2976D0A1EE9676C00F40506 /* DeatilTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeatilTaskViewController.m; sourceTree = "<group>"; };
+		B2976D0C1EE9677E00F40506 /* EditTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTaskViewController.h; sourceTree = "<group>"; };
+		B2976D0D1EE9677E00F40506 /* EditTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTaskViewController.m; sourceTree = "<group>"; };
+		B2976D101EE96C9C00F40506 /* TaskObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaskObject.h; sourceTree = "<group>"; };
+		B2976D111EE96C9C00F40506 /* TaskObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskObject.m; sourceTree = "<group>"; };
+		B2976D131EE97DF500F40506 /* OverDuePrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverDuePrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +120,21 @@
 				B2976CD41EE966D400F40506 /* AppDelegate.m */,
 				B2976CD61EE966D400F40506 /* ViewController.h */,
 				B2976CD71EE966D400F40506 /* ViewController.m */,
+				B2976D061EE9675100F40506 /* AddTaskViewController.h */,
+				B2976D071EE9675100F40506 /* AddTaskViewController.m */,
+				B2976D091EE9676C00F40506 /* DeatilTaskViewController.h */,
+				B2976D0A1EE9676C00F40506 /* DeatilTaskViewController.m */,
+				B2976D0C1EE9677E00F40506 /* EditTaskViewController.h */,
+				B2976D0D1EE9677E00F40506 /* EditTaskViewController.m */,
+				B2976D131EE97DF500F40506 /* OverDuePrefixHeader.pch */,
 				B2976CD91EE966D400F40506 /* Main.storyboard */,
 				B2976CDF1EE966D400F40506 /* Assets.xcassets */,
 				B2976CE11EE966D400F40506 /* LaunchScreen.storyboard */,
 				B2976CE41EE966D400F40506 /* Info.plist */,
 				B2976CDC1EE966D400F40506 /* OverDueTaskAssignment.xcdatamodeld */,
 				B2976CD01EE966D400F40506 /* Supporting Files */,
+				B2976D101EE96C9C00F40506 /* TaskObject.h */,
+				B2976D111EE96C9C00F40506 /* TaskObject.m */,
 			);
 			path = OverDueTaskAssignment;
 			sourceTree = "<group>";
@@ -276,8 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2976D0B1EE9676C00F40506 /* DeatilTaskViewController.m in Sources */,
+				B2976D121EE96C9C00F40506 /* TaskObject.m in Sources */,
+				B2976D081EE9675100F40506 /* AddTaskViewController.m in Sources */,
 				B2976CDE1EE966D400F40506 /* OverDueTaskAssignment.xcdatamodeld in Sources */,
 				B2976CD81EE966D400F40506 /* ViewController.m in Sources */,
+				B2976D0E1EE9677E00F40506 /* EditTaskViewController.m in Sources */,
 				B2976CD51EE966D400F40506 /* AppDelegate.m in Sources */,
 				B2976CD21EE966D400F40506 /* main.m in Sources */,
 			);
@@ -364,10 +390,13 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/arun.chauhan/Desktop/OverDueTaskAssignment/OverDueTaskAssignment/OverDuePrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -409,6 +438,9 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/arun.chauhan/Desktop/OverDueTaskAssignment/OverDueTaskAssignment/OverDuePrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -426,6 +458,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/arun.chauhan/Desktop/OverDueTaskAssignment/OverDueTaskAssignment/OverDuePrefixHeader.pch;
 				INFOPLIST_FILE = OverDueTaskAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atmecs.OverDueTaskAssignment;
@@ -437,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = /Users/arun.chauhan/Desktop/OverDueTaskAssignment/OverDueTaskAssignment/OverDuePrefixHeader.pch;
 				INFOPLIST_FILE = OverDueTaskAssignment/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atmecs.OverDueTaskAssignment;
